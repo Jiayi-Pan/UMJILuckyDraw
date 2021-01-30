@@ -10,6 +10,6 @@ A simple JS script to register your desired course when slots are available
 4. add it to the script's <kbd>wantedlessonTaskID</kbd> array,
 5. wait until luck comes :)
 
-## TODO
+## Feature Road Map
 - Add support to drop a specific course when course coliision happens at selection stage
-- Upload the script to tampermonkey
+
