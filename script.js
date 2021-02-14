@@ -19,11 +19,17 @@
         for (let i = 0; i < allClass.length; i++) {
             let thisID = allClass[i].getAttribute("lessontaskid");
             if (wantedlessonTaskID.includes(thisID)) {
-                console.log("Find the course!")
                 console.log(i);
-                let thisButton = allClass[i].getElementsByTagName("button")[0]
+                // some of these having the same  "lessontaskid" actually do not have buttons
+                try {
+                  let thisButton = allClass[i].getElementsByTagName("button")[0]
+                }
+                catch(error){
+                    continue
+                }
                 let thisCourse = allClass[i];
                 let state = thisButton.innerHTML
+                console.log("Find the course!")
                 console.log(state)
                 if (state == "Register") {
                     console.log("Find available!")
@@ -34,6 +40,6 @@
         }
         let refresh = document.getElementsByClassName("refresh")
         refresh[0].click();
-        // Refresh the courses
+        // Refresh the course list
     }
 })();
