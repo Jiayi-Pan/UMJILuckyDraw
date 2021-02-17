@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         UMJI Lucky Draw
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description
 // @author       Jiayi Pan
 // @match        http://coursesel.umji.sjtu.edu.cn/welcome.action
@@ -19,16 +19,26 @@
         for (let i = 0; i < allClass.length; i++) {
             let thisID = allClass[i].getAttribute("lessontaskid");
             if (wantedlessonTaskID.includes(thisID)) {
+                console.log("---")
                 console.log(i);
                 // some of these having the same  "lessontaskid" actually do not have buttons
+                let thisButton
                 try {
-                  let thisButton = allClass[i].getElementsByTagName("button")[0]
+                  thisButton = allClass[i].getElementsByTagName("button")[0]
                 }
                 catch(error){
+                    console.log("skip")
                     continue
                 }
                 let thisCourse = allClass[i];
-                let state = thisButton.innerHTML
+                let state
+                try {
+                    state = thisButton.innerHTML
+                }
+                catch(error){
+                    console.log("skip")
+                    continue
+                }
                 console.log("Find the course!")
                 console.log(state)
                 if (state == "Register") {
