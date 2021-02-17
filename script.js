@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description
-// @author       Jiayi Pan
+// @author       Celeste
 // @match        http://coursesel.umji.sjtu.edu.cn/welcome.action
 // @grant        none
 // ==/UserScript==
