@@ -39,7 +39,7 @@
                     console.log("skip")
                     continue
                 }
-                console.log("Find the course!")
+                console.log("Find the course, status shown below")
                 console.log(state)
                 if (state == "Register") {
                     console.log("Find available!")
