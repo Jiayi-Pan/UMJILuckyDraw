@@ -4,7 +4,7 @@
 // @version      0.2
 // @description
 // @author       Celeste
-// @match        http://coursesel.umji.sjtu.edu.cn/welcome.action
+// @match        https://coursesel.umji.sjtu.edu.cn/welcome.action
 // @grant        none
 // ==/UserScript==
 
