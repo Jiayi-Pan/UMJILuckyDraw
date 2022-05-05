@@ -11,4 +11,4 @@ A simple JS script to register your desired course when slots are available
 7. wait until luck comes :)
 
 ## Feature Road Map
-- Add support to drop a specific course when course coliision happens at selection stage
+- Add support to drop a specific course when course collision happens at selection stage
