@@ -1,4 +1,8 @@
 # UMJILuckyDraw
+> Endlessly refreshing the website or anxiously waiting for the empty-slot email is a waste of time.  A proper course-selection system should avoid such issue by DESIGN.
+
+> This script acts not only as a temporal solution to the problem, but also a gentle signal encouraging an official solution.
+
 Built for UM-SJTU JI students :)
 
 A simple JS script to register your desired course when slots are available
@@ -12,3 +16,4 @@ A simple JS script to register your desired course when slots are available
 
 ## Feature Road Map
 - Add support to drop a specific course when course collision happens at selection stage
+
